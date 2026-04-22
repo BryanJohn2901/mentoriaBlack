@@ -136,7 +136,99 @@
         </div>
     </header>
 
+    <section id="metodo" class="py-24 bg-brand-bg border-y border-white/5 relative overflow-hidden">
+        
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(215,160,123,0.08),transparent_50%)] pointer-events-none"></div>
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAwIDEwIEwgNDAgMTAgTSAxMCAwIEwgMTAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-50 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10 grid lg:grid-cols-12 gap-16 items-center">
+            
+            <div class="lg:col-span-5 flex flex-col justify-center" data-aos="fade-right">
+                <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] mb-4 flex items-center gap-2">
+                    <span class="w-8 h-px bg-brand-primary"></span> Metodologia
+                </div>
+                
+                <h3 class="text-4xl md:text-5xl font-black text-white uppercase leading-tight mb-6">
+                    Os 5 Pilares do <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-primaryHover">Crescimento</span>
+                </h3>
+                
+                <p class="text-brand-textSecondary text-lg leading-relaxed mb-8">
+                    Uma estrutura prática e validada para acelerar negócios de saúde e fitness. O método foca em criar uma base sólida que permite a escala sem a dependência extrema do dono.
+                </p>
+
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start gap-3 group">
+                        <i class="fas fa-check-circle text-brand-primary mt-1 shadow-brand-primary/50 group-hover:scale-110 transition-transform"></i> 
+                        <span class="text-sm text-brand-textSecondary group-hover:text-white transition-colors">Posicionamento forte e margem de lucro</span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <i class="fas fa-check-circle text-brand-primary mt-1 shadow-brand-primary/50 group-hover:scale-110 transition-transform"></i> 
+                        <span class="text-sm text-brand-textSecondary group-hover:text-white transition-colors">Operação eficiente que funciona sem você</span>
+                    </li>
+                    <li class="flex items-start gap-3 group">
+                        <i class="fas fa-check-circle text-brand-primary mt-1 shadow-brand-primary/50 group-hover:scale-110 transition-transform"></i> 
+                        <span class="text-sm text-brand-textSecondary group-hover:text-white transition-colors">Equipe alinhada, produtiva e engajada</span>
+                    </li>
+                </ul>
+
+                <div>
+                    <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-10 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.6)] hover:-translate-y-1 inline-flex items-center justify-center gap-3">
+                        Quero Aplicar o Método <i class="fas fa-bolt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 relative w-full max-w-[600px] mx-auto aspect-square" data-aos="fade-left" data-aos-delay="200">
+                
+                <div class="absolute inset-[10%] rounded-full border border-brand-primary/10 bg-brand-primary/[0.02]"></div>
+                <div class="absolute inset-[20%] rounded-full border-2 border-dashed border-brand-primary/20 animate-[spin_60s_linear_infinite]"></div>
+                <div class="absolute inset-[30%] rounded-full border border-brand-primary/10"></div>
+
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40%] h-[40%] rounded-full bg-brand-surface border border-brand-primary flex flex-col items-center justify-center text-center p-4 shadow-[0_0_60px_rgba(215,160,123,0.3)] backdrop-blur-md z-20 group hover:scale-105 transition-all duration-500 cursor-default">
+                    <div class="absolute inset-0 rounded-full bg-brand-primary/10 animate-pulse"></div>
+                    <div class="relative z-10">
+                        <div class="text-2xl md:text-3xl font-black text-brand-primary uppercase leading-tight mb-1 group-hover:text-white transition-colors drop-shadow-[0_0_10px_rgba(215,160,123,0.5)]">Máquina <br>de Vendas</div>
+                        <div class="text-[9px] md:text-xs text-brand-textSecondary uppercase font-bold tracking-[0.2em] mt-2">Estratégia de Crescimento</div>
+                    </div>
+                </div>
+
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[28%] h-[28%] rounded-full glass-strong border border-brand-primary/30 flex flex-col items-center justify-center text-center p-2 shadow-2xl hover:border-brand-primary hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(215,160,123,0.2)] transition-all duration-300 z-30 group cursor-default">
+                    <i class="fas fa-box-open text-brand-primary text-xl md:text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-white text-xs md:text-sm font-black uppercase leading-tight">Produto</div>
+                    <div class="hidden md:block text-[9px] text-brand-textMuted uppercase mt-1 leading-tight">Posicionamento<br>e Margem</div>
+                </div>
+
+                <div class="absolute top-[22%] -right-[2%] w-[28%] h-[28%] rounded-full glass-strong border border-brand-primary/30 flex flex-col items-center justify-center text-center p-2 shadow-2xl hover:border-brand-primary hover:translate-x-2 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(215,160,123,0.2)] transition-all duration-300 z-30 group cursor-default">
+                    <i class="fas fa-project-diagram text-brand-primary text-xl md:text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-white text-xs md:text-sm font-black uppercase leading-tight">Processos</div>
+                    <div class="hidden md:block text-[9px] text-brand-textMuted uppercase mt-1 leading-tight">Operação<br>sem o dono</div>
+                </div>
+
+                <div class="absolute bottom-[4%] right-[10%] w-[28%] h-[28%] rounded-full glass-strong border border-brand-primary/30 flex flex-col items-center justify-center text-center p-2 shadow-2xl hover:border-brand-primary hover:translate-x-1 hover:translate-y-1 hover:shadow-[0_10px_30px_rgba(215,160,123,0.2)] transition-all duration-300 z-30 group cursor-default">
+                    <i class="fas fa-users text-brand-primary text-xl md:text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-white text-xs md:text-sm font-black uppercase leading-tight">Pessoas</div>
+                    <div class="hidden md:block text-[9px] text-brand-textMuted uppercase mt-1 leading-tight">Equipe alinhada<br>e produtiva</div>
+                </div>
+
+                <div class="absolute bottom-[4%] left-[10%] w-[28%] h-[28%] rounded-full glass-strong border border-brand-primary/30 flex flex-col items-center justify-center text-center p-2 shadow-2xl hover:border-brand-primary hover:-translate-x-1 hover:translate-y-1 hover:shadow-[0_10px_30px_rgba(215,160,123,0.2)] transition-all duration-300 z-30 group cursor-default">
+                    <i class="fas fa-chess-knight text-brand-primary text-xl md:text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-white text-xs md:text-sm font-black uppercase leading-tight">Estratégia</div>
+                    <div class="hidden md:block text-[9px] text-brand-textMuted uppercase mt-1 leading-tight">Visão, metas<br>e direção</div>
+                </div>
+
+                <div class="absolute top-[22%] -left-[2%] w-[28%] h-[28%] rounded-full glass-strong border border-brand-primary/30 flex flex-col items-center justify-center text-center p-2 shadow-2xl hover:border-brand-primary hover:-translate-x-2 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(215,160,123,0.2)] transition-all duration-300 z-30 group cursor-default">
+                    <i class="fas fa-bullhorn text-brand-primary text-xl md:text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
+                    <div class="text-white text-xs md:text-sm font-black uppercase leading-tight">Mkt & Tech</div>
+                    <div class="hidden md:block text-[9px] text-brand-textMuted uppercase mt-1 leading-tight">Automações e<br>Growth real</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="mentores" class="py-24 bg-brand-surface border-y border-brand-border relative overflow-hidden">
+        
         <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -152,19 +244,26 @@
                 <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-16 group">
                     <div class="w-full md:w-1/2 relative" data-aos="fade-right">
                         <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
                         <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
                             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="André Albuquerque" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                            
+                            <div class="absolute top-6 right-6 glass-strong px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 transform translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-xl">
+                                <i class="fas fa-users text-brand-primary text-sm"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">+23k Alunos</span>
+                            </div>
+
                             <div class="absolute bottom-6 left-6 right-6">
-                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">André <span class="text-brand-primary">Albuquerque</span></h4>
+                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">André <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 group-hover:from-brand-primary group-hover:to-brand-primaryHover">Albuquerque</span></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 space-y-6" data-aos="fade-left">
+                    <div class="w-full md:w-1/2 space-y-6 relative pl-6 border-l border-white/5 group-hover:border-brand-primary/30 transition-colors duration-500" data-aos="fade-left">
                         <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] flex items-center gap-2">
                             <span class="w-8 h-px bg-brand-primary"></span> Especialista Técnico
                         </div>
-                        <p class="text-brand-textSecondary leading-relaxed text-lg">
+                        <p class="text-brand-textSecondary leading-relaxed text-lg font-medium">
                             Professor de Educação Física e Mestre em Biomecânica. É o fundador da Personal Trainer Academy e autor best seller.
                         </p>
                         <p class="text-brand-textMuted leading-relaxed">
@@ -176,19 +275,26 @@
                 <div class="flex flex-col md:flex-row-reverse items-center gap-10 lg:gap-16 group">
                     <div class="w-full md:w-1/2 relative" data-aos="fade-left">
                         <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
                         <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
                             <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Rafael Tonietto" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                            
+                            <div class="absolute top-6 left-6 glass-strong px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 transform -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-xl">
+                                <i class="fas fa-rocket text-brand-primary text-sm"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">17 Anos Lançando</span>
+                            </div>
+
                             <div class="absolute bottom-6 left-6 right-6 md:text-right">
-                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">Rafael <span class="text-brand-primary">Tonietto</span></h4>
+                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">Rafael <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 group-hover:from-brand-primary group-hover:to-brand-primaryHover">Tonietto</span></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 space-y-6 md:text-right flex flex-col md:items-end" data-aos="fade-right">
+                    <div class="w-full md:w-1/2 space-y-6 md:text-right flex flex-col md:items-end relative pr-6 border-r border-white/5 group-hover:border-brand-primary/30 transition-colors duration-500" data-aos="fade-right">
                         <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] flex items-center gap-2">
                             Mestre em Escala <span class="w-8 h-px bg-brand-primary"></span>
                         </div>
-                        <p class="text-brand-textSecondary leading-relaxed text-lg">
+                        <p class="text-brand-textSecondary leading-relaxed text-lg font-medium">
                             PhD em Comunicação, Cofundador e CEO da Personal Trainer Academy, a maior escola de especialização para personal trainers do Brasil.
                         </p>
                         <p class="text-brand-textMuted leading-relaxed">
@@ -200,19 +306,26 @@
                 <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-16 group">
                     <div class="w-full md:w-1/2 relative" data-aos="fade-right">
                         <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
                         <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" alt="Artur Monteiro" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                            
+                            <div class="absolute top-6 right-6 glass-strong px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 transform translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-xl">
+                                <i class="fas fa-globe text-brand-primary text-sm"></i>
+                                <span class="text-white text-xs font-bold uppercase tracking-wider">78 Países</span>
+                            </div>
+
                             <div class="absolute bottom-6 left-6 right-6">
-                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">Artur <span class="text-brand-primary">Monteiro</span></h4>
+                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">Artur <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 group-hover:from-brand-primary group-hover:to-brand-primaryHover">Monteiro</span></h4>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 space-y-6" data-aos="fade-left">
+                    <div class="w-full md:w-1/2 space-y-6 relative pl-6 border-l border-white/5 group-hover:border-brand-primary/30 transition-colors duration-500" data-aos="fade-left">
                         <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] flex items-center gap-2">
                             <span class="w-8 h-px bg-brand-primary"></span> Gestão e Mastermind
                         </div>
-                        <p class="text-brand-textSecondary leading-relaxed text-lg">
+                        <p class="text-brand-textSecondary leading-relaxed text-lg font-medium">
                             CEO do Mães em Forma, um programa revolucionário que já atendeu mais de 30 mil mulheres em 78 países.
                         </p>
                         <p class="text-brand-textMuted leading-relaxed">
@@ -222,98 +335,148 @@
                 </div>
 
             </div>
-            <div class="mt-16 text-center" data-aos="zoom-in">
-                <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-16 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.5)] hover:-translate-y-1">
-                    Quero Aprender Com os Mentores
+            
+            <div class="mt-20 text-center" data-aos="zoom-in">
+                <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-16 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.6)] hover:-translate-y-1 flex items-center justify-center gap-3 mx-auto">
+                    Quero Aprender Com os Mentores <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
         </div>
     </section>
 
-    <section id="conteudo" class="py-24 bg-brand-bg relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10 max-w-6xl">
+    <section id="conteudo" class="py-24 bg-brand-surface border-y border-brand-border relative overflow-hidden">
+        
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-primary/5 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-primary/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
             <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-4">Temas Abordados</h2>
-                <h3 class="text-3xl md:text-5xl font-black text-white uppercase">O que você vai <span class="text-brand-primary">Dominar</span></h3>
+                <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-4">Temas em Profundidade</h2>
+                <h3 class="text-3xl md:text-5xl font-black text-white uppercase leading-tight">
+                    O que você vai <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-primaryHover">Dominar</span>
+                </h3>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">01</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Produto</h4>
-                        <p class="text-sm text-brand-textMuted">Entender o que realmente gera margem e posicionamento forte no mercado de saúde e fitness.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">01</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-box-open text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Produto</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Entender o que realmente gera margem e posicionamento forte no mercado de saúde e fitness.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">02</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Máquina de Vendas</h4>
-                        <p class="text-sm text-brand-textMuted">Como construir um processo comercial que vende sem depender do dono.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="150">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">02</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-funnel-dollar text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Máquina de Vendas</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como construir um processo comercial que vende sem depender do dono.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">03</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Modelo de Negócio</h4>
-                        <p class="text-sm text-brand-textMuted">Definir e refinar o que realmente escala com margem no seu segmento.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">03</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-sitemap text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Modelo de Negócio</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Definir e refinar o que realmente escala com margem no seu segmento.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">04</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Equity e Crescimento</h4>
-                        <p class="text-sm text-brand-textMuted">Como construir um negócio sólido e preparar a empresa para novos patamares.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="250">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">04</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Equity e Crescimento</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como construir um negócio sólido e preparar a empresa para novos patamares.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">05</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Marketing e Branding</h4>
-                        <p class="text-sm text-brand-textMuted">Como construir uma máquina de aquisição de clientes e posicionar sua marca inteligentemente.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">05</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-bullseye text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Marketing e Branding</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como construir uma máquina de aquisição de clientes e posicionar sua marca inteligentemente.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">06</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Cultura e Escala</h4>
-                        <p class="text-sm text-brand-textMuted">Como construir uma cultura forte e escalar sem perder qualidade.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="350">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">06</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-globe-americas text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Cultura e Escala</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como construir uma cultura forte e escalar sem perder qualidade.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">07</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Aquisição Multicanal</h4>
-                        <p class="text-sm text-brand-textMuted">Como diversificar e expandir os canais de venda no presencial e digital.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">07</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-project-diagram text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Aquisição Multicanal</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como diversificar e expandir os canais de venda no presencial e digital.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">08</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Gestão de Processos</h4>
-                        <p class="text-sm text-brand-textMuted">Como criar processos que funcionam sem o dono para resultados extraordinários.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="450">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">08</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-cogs text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Gestão de Processos</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como criar processos que funcionam sem o dono para resultados extraordinários.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">09</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Esteira de Produto</h4>
-                        <p class="text-sm text-brand-textMuted">Como criar novos produtos e serviços para aumentar o ticket médio e a recorrência.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="500">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">09</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-layer-group text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Esteira de Produto</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como criar novos produtos e serviços para aumentar o ticket médio e a recorrência.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
-                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">10</div>
-                    <div>
-                        <h4 class="text-lg font-bold text-white uppercase mb-1">Gestão Financeira</h4>
-                        <p class="text-sm text-brand-textMuted">Como eliminar desperdício de caixa, aumentar margem e criar previsibilidade financeira.</p>
+
+                <div class="glass-strong p-8 rounded-[2rem] border border-white/5 hover:border-brand-primary/30 relative overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_40px_-10px_rgba(215,160,123,0.15)]" data-aos="fade-up" data-aos-delay="550">
+                    <div class="absolute -bottom-6 -right-6 text-9xl font-black text-white/[0.02] group-hover:text-brand-primary/[0.05] transition-colors duration-500 pointer-events-none select-none">10</div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bg border border-white/10 flex items-center justify-center text-brand-primary mb-6 group-hover:scale-110 group-hover:bg-brand-primary/10 transition-all duration-500 shadow-lg">
+                            <i class="fas fa-wallet text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-white uppercase mb-3 tracking-wide">Gestão Financeira</h4>
+                        <p class="text-brand-textSecondary text-sm leading-relaxed">Como eliminar desperdício de caixa, aumentar margem e criar previsibilidade financeira.</p>
                     </div>
                 </div>
+
             </div>
-            <div class="mt-16 text-center" data-aos="zoom-in">
-                <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-16 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.5)] hover:-translate-y-1">
-                    Quero Dominar Esses Temas
+
+            <div class="mt-20 text-center" data-aos="zoom-in">
+                <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-14 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.6)] hover:-translate-y-1 inline-flex items-center justify-center gap-3">
+                    Quero Dominar Todos os Temas <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
+
         </div>
     </section>
 
