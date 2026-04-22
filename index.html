@@ -30,6 +30,7 @@
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
                     },
                     animation: {
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -47,7 +48,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -60,53 +61,19 @@
             border: 1px solid rgba(215, 160, 123, 0.1);
         }
         
-        /* Cursor Premium (Mouse Effect) - Desktop Only */
-        @media (min-width: 1024px) {
-            body { cursor: none; }
-            a, button, input, select, textarea { cursor: none !important; }
-        }
-
-        .custom-cursor {
-            position: fixed;
-            top: 0; left: 0;
-            width: 32px; height: 32px;
-            border: 1px solid rgba(215, 160, 123, 0.4);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-            transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s;
-            box-shadow: 0 0 15px rgba(215, 160, 123, 0.1);
-        }
-        .custom-cursor-dot {
-            position: fixed;
-            top: 0; left: 0;
-            width: 6px; height: 6px;
-            background-color: #D7A07B;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 10000;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 10px rgba(215, 160, 123, 0.8);
-        }
-        .custom-cursor.hover {
-            width: 50px; height: 50px;
-            background-color: rgba(215, 160, 123, 0.1);
-            border-color: rgba(215, 160, 123, 0.8);
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
         }
     </style>
 </head>
 <body class="bg-brand-bg text-brand-textPrimary font-sans antialiased selection:bg-brand-primary selection:text-black">
-
-    <div class="custom-cursor hidden lg:block" id="cursor"></div>
-    <div class="custom-cursor-dot hidden lg:block" id="cursor-dot"></div>
 
     <nav class="fixed top-6 left-0 right-0 z-50 px-4 md:px-0 hidden md:block aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000"> 
         <div class="container mx-auto max-w-5xl"> 
             <div class="relative flex items-center justify-between px-6 py-3 rounded-full glass-strong shadow-[0_8px_32px_0_rgba(0,0,0,0.8)] transition-all duration-300 hover:border-brand-primary/40 hover:shadow-[0_12px_40px_0_rgba(215,160,123,0.15)]"> 
                 
                 <a href="#" class="block hover:opacity-80 transition-opacity duration-300 flex items-center shrink-0"> 
-                    <div class="text-xl font-black italic tracking-widest text-white">Mentoria <span class="text-brand-primary">BLACK</span></div>
+                    <div class="text-xl font-black tracking-widest text-white">Mentoria <span class="text-brand-primary">BLACK</span></div>
                 </a> 
 
                 <div class="hidden md:flex items-center gap-8"> 
@@ -152,7 +119,7 @@
                     Para Negócios na Saúde
                 </div>
                 
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[1.05] text-white italic">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[1.05] text-white">
                     Mentoria <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-primaryHover">BLACK</span>
                 </h1>
                 
@@ -170,45 +137,95 @@
     </header>
 
     <section id="mentores" class="py-24 bg-brand-surface border-y border-brand-border relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
-                <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-3">Conheça os seus Mentores</h2>
-                <h3 class="text-3xl md:text-5xl font-black uppercase leading-tight text-white italic">Um time de <span class="text-brand-primary">Experts</span></h3>
-                <p class="mt-4 text-brand-textSecondary text-lg">Para ajudar você e seu negócio a decolar e atingir novos patamares.</p>
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10 max-w-6xl">
+            <div class="text-center mb-24" data-aos="fade-up">
+                <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-4">Conheça os Especialistas</h2>
+                <h3 class="text-3xl md:text-5xl font-black uppercase leading-tight text-white">Um time de <span class="text-brand-primary">Mentores</span></h3>
+                <p class="mt-4 text-brand-textSecondary text-lg max-w-2xl mx-auto">Um grupo de experts pronto para ajudar você e seu negócio a decolar e atingir novos patamares.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-brand-bg rounded-3xl p-8 border border-brand-border hover:border-brand-primary/50 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-20 h-20 bg-brand-surface rounded-full flex items-center justify-center mb-6 border border-brand-primary/20 text-brand-primary text-2xl group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(215,160,123,0.2)]">
-                        <i class="fas fa-user-tie"></i>
+            <div class="flex flex-col gap-24">
+                
+                <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-16 group">
+                    <div class="w-full md:w-1/2 relative" data-aos="fade-right">
+                        <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="André Albuquerque" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">André <span class="text-brand-primary">Albuquerque</span></h4>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-white uppercase mb-2">André Albuquerque</h4>
-                    <p class="text-sm text-brand-textMuted leading-relaxed">Fundador da Personal Trainer Academy, Autor Best Seller. Já formou mais de 23 mil alunos com conteúdo prático sobre Biomecânica.</p>
+                    <div class="w-full md:w-1/2 space-y-6" data-aos="fade-left">
+                        <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] flex items-center gap-2">
+                            <span class="w-8 h-px bg-brand-primary"></span> Especialista Técnico
+                        </div>
+                        <p class="text-brand-textSecondary leading-relaxed text-lg">
+                            Professor de Educação Física e Mestre em Biomecânica. É o fundador da Personal Trainer Academy e autor best seller.
+                        </p>
+                        <p class="text-brand-textMuted leading-relaxed">
+                            Conselheiro técnico da Total Health, influenciador da NextFit e idealizador do projeto Sou Pro. Já formou mais de 23 mil alunos e compartilha conteúdo prático sobre Biomecânica para uma audiência de mais de 200 mil pessoas.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-brand-bg rounded-3xl p-8 border border-brand-border hover:border-brand-primary/50 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 bg-brand-surface rounded-full flex items-center justify-center mb-6 border border-brand-primary/20 text-brand-primary text-2xl group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(215,160,123,0.2)]">
-                        <i class="fas fa-chart-line"></i>
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10 lg:gap-16 group">
+                    <div class="w-full md:w-1/2 relative" data-aos="fade-left">
+                        <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Rafael Tonietto" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 md:text-right">
+                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">Rafael <span class="text-brand-primary">Tonietto</span></h4>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-white uppercase mb-2">Rafael Tonietto</h4>
-                    <p class="text-sm text-brand-textMuted leading-relaxed">PhD em Comunicação, Cofundador e CEO da PTA. 17 anos de experiência em lançamentos, ajudando a triplicar resultados.</p>
+                    <div class="w-full md:w-1/2 space-y-6 md:text-right flex flex-col md:items-end" data-aos="fade-right">
+                        <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] flex items-center gap-2">
+                            Mestre em Escala <span class="w-8 h-px bg-brand-primary"></span>
+                        </div>
+                        <p class="text-brand-textSecondary leading-relaxed text-lg">
+                            PhD em Comunicação, Cofundador e CEO da Personal Trainer Academy, a maior escola de especialização para personal trainers do Brasil.
+                        </p>
+                        <p class="text-brand-textMuted leading-relaxed">
+                            Parceiro estratégico e Palestrante da Eduzz. Com 17 anos de experiência em lançamentos e mais de 7 anos no marketing digital, já ajudou centenas de profissionais do fitness a triplicarem seus resultados.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-brand-bg rounded-3xl p-8 border border-brand-border hover:border-brand-primary/50 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 bg-brand-surface rounded-full flex items-center justify-center mb-6 border border-brand-primary/20 text-brand-primary text-2xl group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(215,160,123,0.2)]">
-                        <i class="fas fa-globe"></i>
+                <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-16 group">
+                    <div class="w-full md:w-1/2 relative" data-aos="fade-right">
+                        <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" alt="Artur Monteiro" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <h4 class="text-3xl font-black text-white uppercase transition-colors duration-500 group-hover:text-brand-primary">Artur <span class="text-brand-primary">Monteiro</span></h4>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="text-xl font-bold text-white uppercase mb-2">Artur Monteiro</h4>
-                    <p class="text-sm text-brand-textMuted leading-relaxed">CEO do Mães em Forma (atendendo mais de 30 mil mulheres em 78 países). Idealizador do Business Club.</p>
+                    <div class="w-full md:w-1/2 space-y-6" data-aos="fade-left">
+                        <div class="text-brand-primary text-xs font-black uppercase tracking-[0.3em] flex items-center gap-2">
+                            <span class="w-8 h-px bg-brand-primary"></span> Gestão e Mastermind
+                        </div>
+                        <p class="text-brand-textSecondary leading-relaxed text-lg">
+                            CEO do Mães em Forma, um programa revolucionário que já atendeu mais de 30 mil mulheres em 78 países.
+                        </p>
+                        <p class="text-brand-textMuted leading-relaxed">
+                            Empreendedor e empresário de infoprodutos, autor do livro Ephygital e palestrante Fitness Brasil. Também é o idealizador do Business Club, um mastermind exclusivo para empresários.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-brand-bg rounded-3xl p-8 border border-brand-border hover:border-brand-primary/50 transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-20 h-20 bg-brand-surface rounded-full flex items-center justify-center mb-6 border border-brand-primary/20 text-brand-primary text-2xl group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(215,160,123,0.2)]">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white uppercase mb-2">Douglas Waltricke</h4>
-                    <p class="text-sm text-brand-textMuted leading-relaxed">Autor do guia prático "No Brain No Gain". Empreendedor e referência no ecossistema fitness com foco em gestão e liderança.</p>
-                </div>
+            </div>
+            <div class="mt-16 text-center" data-aos="zoom-in">
+                <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-16 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.5)] hover:-translate-y-1">
+                    Quero Aprender Com os Mentores
+                </button>
             </div>
         </div>
     </section>
@@ -217,89 +234,94 @@
         <div class="container mx-auto px-6 relative z-10 max-w-6xl">
             <div class="text-center mb-20" data-aos="fade-up">
                 <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-4">Temas Abordados</h2>
-                <h3 class="text-3xl md:text-5xl font-black text-white uppercase italic">O que você vai <span class="text-brand-primary">Dominar</span></h3>
+                <h3 class="text-3xl md:text-5xl font-black text-white uppercase">O que você vai <span class="text-brand-primary">Dominar</span></h3>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-right">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">01</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">01</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Produto</h4>
                         <p class="text-sm text-brand-textMuted">Entender o que realmente gera margem e posicionamento forte no mercado de saúde e fitness.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-left">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">02</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">02</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Máquina de Vendas</h4>
                         <p class="text-sm text-brand-textMuted">Como construir um processo comercial que vende sem depender do dono.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-right">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">03</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">03</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Modelo de Negócio</h4>
                         <p class="text-sm text-brand-textMuted">Definir e refinar o que realmente escala com margem no seu segmento.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-left">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">04</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">04</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Equity e Crescimento</h4>
                         <p class="text-sm text-brand-textMuted">Como construir um negócio sólido e preparar a empresa para novos patamares.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-right">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">05</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">05</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Marketing e Branding</h4>
                         <p class="text-sm text-brand-textMuted">Como construir uma máquina de aquisição de clientes e posicionar sua marca inteligentemente.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-left">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">06</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">06</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Cultura e Escala</h4>
                         <p class="text-sm text-brand-textMuted">Como construir uma cultura forte e escalar sem perder qualidade.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-right">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">07</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">07</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Aquisição Multicanal</h4>
                         <p class="text-sm text-brand-textMuted">Como diversificar e expandir os canais de venda no presencial e digital.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-left">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">08</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">08</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Gestão de Processos</h4>
                         <p class="text-sm text-brand-textMuted">Como criar processos que funcionam sem o dono para resultados extraordinários.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-right">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">09</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-right">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">09</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Esteira de Produto</h4>
                         <p class="text-sm text-brand-textMuted">Como criar novos produtos e serviços para aumentar o ticket médio e a recorrência.</p>
                     </div>
                 </div>
-                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4" data-aos="fade-left">
-                    <div class="text-3xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">10</div>
+                <div class="glass-strong p-6 rounded-2xl flex items-start gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-[0_12px_35px_rgba(215,160,123,0.12)]" data-aos="fade-left">
+                    <div class="text-5xl md:text-6xl font-black text-white/10" style="-webkit-text-stroke: 1px rgba(215,160,123,0.5);">10</div>
                     <div>
                         <h4 class="text-lg font-bold text-white uppercase mb-1">Gestão Financeira</h4>
                         <p class="text-sm text-brand-textMuted">Como eliminar desperdício de caixa, aumentar margem e criar previsibilidade financeira.</p>
                     </div>
                 </div>
             </div>
+            <div class="mt-16 text-center" data-aos="zoom-in">
+                <button onclick="abrirPopup()" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-primaryHover text-black font-black uppercase tracking-[0.1em] py-5 px-16 rounded-xl transition-all duration-300 shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:shadow-[0_0_50px_rgba(215,160,123,0.5)] hover:-translate-y-1">
+                    Quero Dominar Esses Temas
+                </button>
+            </div>
         </div>
     </section>
 
-    <section class="py-24 bg-brand-surface border-y border-brand-border relative">
+    <section id="entregaveis" class="py-24 bg-brand-surface border-y border-brand-border relative">
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="grid md:grid-cols-2 gap-16">
                 <div data-aos="fade-right">
-                    <h3 class="text-3xl font-black text-white uppercase mb-8 italic border-b border-brand-border pb-4">Entregáveis</h3>
+                    <h3 class="text-3xl font-black text-white uppercase mb-8 border-b border-brand-border pb-4">Entregáveis</h3>
                     <ul class="space-y-6">
                         <li class="flex items-center gap-4 text-brand-textSecondary"><i class="fas fa-check text-brand-primary text-xl"></i> 3 encontros presenciais (2 dias cada) em SP e Curitiba</li>
                         <li class="flex items-center gap-4 text-brand-textSecondary"><i class="fas fa-check text-brand-primary text-xl"></i> 9 encontros online</li>
@@ -309,7 +331,7 @@
                     </ul>
                 </div>
                 <div data-aos="fade-left">
-                    <h3 class="text-3xl font-black text-white uppercase mb-8 italic border-b border-brand-border pb-4">Bônus Exclusivos</h3>
+                    <h3 class="text-3xl font-black text-white uppercase mb-8 border-b border-brand-border pb-4">Bônus Exclusivos</h3>
                     <ul class="space-y-6">
                         <li class="flex items-center gap-4 text-brand-textSecondary"><i class="fas fa-star text-brand-primary text-xl"></i> Master Trainer (2 dias)</li>
                         <li class="flex items-center gap-4 text-brand-textSecondary"><i class="fas fa-star text-brand-primary text-xl"></i> Summit (2 dias)</li>
@@ -327,48 +349,103 @@
     </section>
 
     <section id="depoimentos" class="py-24 bg-brand-bg relative overflow-hidden">
-        <div class="container mx-auto px-6 max-w-6xl relative z-10">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-4">Resultados</h2>
-                <h3 class="text-3xl md:text-5xl font-black uppercase text-white leading-tight italic">
-                    O que dizem os <span class="text-brand-primary">Membros</span>
+        
+        <div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[150px] -translate-y-1/2 pointer-events-none"></div>
+        <div class="absolute top-1/2 right-0 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[150px] -translate-y-1/2 pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 max-w-7xl relative z-10">
+            
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-brand-primary text-xs font-bold uppercase tracking-[0.2em] mb-4">Resultados Comprovados</h2>
+                <h3 class="text-4xl md:text-5xl font-black uppercase text-white leading-tight">
+                    O que dizem os <br class="md:hidden"><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-primaryHover">Membros BLACK</span>
                 </h3>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="glass-strong p-8 rounded-3xl border border-brand-border flex flex-col" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-quote-left text-3xl text-brand-primary/30 mb-6"></i>
-                    <p class="text-brand-textSecondary text-sm italic leading-relaxed mb-8 flex-1">
-                        "Dentro da mentoria, estamos ganhando clareza sobre o caminho do nosso negócio, com processos bem definidos e decisões baseadas em métricas. Identificamos os erros e como evoluir com foco em escala."
-                    </p>
-                    <div>
-                        <div class="font-bold text-white text-sm uppercase">Paulo & Claudia Bachiega</div>
-                        <div class="text-[10px] text-brand-primary uppercase font-bold tracking-widest">Fundadores do Treino lá em Casa</div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
+                
+                <div class="glass-strong p-10 rounded-[2rem] border border-brand-border flex flex-col relative group hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(215,160,123,0.1)] hover:border-brand-primary/40 transition-all duration-500 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-quote-right absolute -top-8 -right-8 text-9xl text-white/5 group-hover:text-brand-primary/10 transition-colors duration-500 rotate-12 pointer-events-none"></i>
+                    
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex items-center gap-1 text-brand-primary text-sm mb-6">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        
+                        <p class="text-brand-textSecondary text-base leading-relaxed mb-10 flex-1">
+                            "Dentro da mentoria, estamos ganhando clareza sobre o caminho do nosso negócio, com processos bem definidos e decisões baseadas em métricas. Identificamos os erros e como evoluir com foco em escala."
+                        </p>
+                        
+                        <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+                            <div class="w-14 h-14 rounded-full bg-brand-surface border-2 border-brand-primary/30 overflow-hidden group-hover:border-brand-primary transition-colors shrink-0">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" alt="Paulo & Claudia" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <div class="font-black text-white text-sm uppercase tracking-wide group-hover:text-brand-primary transition-colors">Paulo & Claudia Bachiega</div>
+                                <div class="text-[10px] text-brand-textMuted uppercase font-bold tracking-widest mt-1">Treino lá em Casa</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="glass-strong p-8 rounded-3xl border border-brand-border flex flex-col" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-quote-left text-3xl text-brand-primary/30 mb-6"></i>
-                    <p class="text-brand-textSecondary text-sm italic leading-relaxed mb-8 flex-1">
-                        "Vejo um potencial real de levar o negócio para 4 a 5 milhões. A virada foi parar de olhar só para a operação e começar a ter um olhar estratégico. Escala e lucro vêm de estratégia."
-                    </p>
-                    <div>
-                        <div class="font-bold text-white text-sm uppercase">Guilherme de Paula</div>
-                        <div class="text-[10px] text-brand-primary uppercase font-bold tracking-widest">Estrategista Digital Fitness</div>
+                <div class="glass-strong p-10 rounded-[2rem] border border-brand-border flex flex-col relative group hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(215,160,123,0.1)] hover:border-brand-primary/40 transition-all duration-500 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-quote-right absolute -top-8 -right-8 text-9xl text-white/5 group-hover:text-brand-primary/10 transition-colors duration-500 rotate-12 pointer-events-none"></i>
+                    
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex items-center gap-1 text-brand-primary text-sm mb-6">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        
+                        <p class="text-brand-textSecondary text-base leading-relaxed mb-10 flex-1">
+                            "Vejo um potencial real de levar o negócio para 4 a 5 milhões. A virada foi parar de olhar só para a operação e começar a ter um olhar estratégico. Escala e lucro vêm de estratégia."
+                        </p>
+                        
+                        <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+                            <div class="w-14 h-14 rounded-full bg-brand-surface border-2 border-brand-primary/30 overflow-hidden group-hover:border-brand-primary transition-colors shrink-0">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" alt="Guilherme de Paula" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <div class="font-black text-white text-sm uppercase tracking-wide group-hover:text-brand-primary transition-colors">Guilherme de Paula</div>
+                                <div class="text-[10px] text-brand-textMuted uppercase font-bold tracking-widest mt-1">Estrategista Digital</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="glass-strong p-8 rounded-3xl border border-brand-border flex flex-col" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-quote-left text-3xl text-brand-primary/30 mb-6"></i>
-                    <p class="text-brand-textSecondary text-sm italic leading-relaxed mb-8 flex-1">
-                        "Crescimento de 20% no presencial e 70% no digital. Entendi que para ganhar tração é preciso estruturar a empresa. A visão agora é agir estrategicamente para resultados ainda maiores."
-                    </p>
-                    <div>
-                        <div class="font-bold text-white text-sm uppercase">Tiago Bueno</div>
-                        <div class="text-[10px] text-brand-primary uppercase font-bold tracking-widest">Criador do Bueno Force</div>
+                <div class="glass-strong p-10 rounded-[2rem] border border-brand-border flex flex-col relative group hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(215,160,123,0.1)] hover:border-brand-primary/40 transition-all duration-500 overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-quote-right absolute -top-8 -right-8 text-9xl text-white/5 group-hover:text-brand-primary/10 transition-colors duration-500 rotate-12 pointer-events-none"></i>
+                    
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex items-center gap-1 text-brand-primary text-sm mb-6">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        
+                        <p class="text-brand-textSecondary text-base leading-relaxed mb-10 flex-1">
+                            "Crescimento de 20% no presencial e 70% no digital. Entendi que para ganhar tração é preciso estruturar a empresa. A visão agora é agir estrategicamente para resultados ainda maiores."
+                        </p>
+                        
+                        <div class="flex items-center gap-4 pt-6 border-t border-white/5">
+                            <div class="w-14 h-14 rounded-full bg-brand-surface border-2 border-brand-primary/30 overflow-hidden group-hover:border-brand-primary transition-colors shrink-0">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Tiago Bueno" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <div class="font-black text-white text-sm uppercase tracking-wide group-hover:text-brand-primary transition-colors">Tiago Bueno</div>
+                                <div class="text-[10px] text-brand-textMuted uppercase font-bold tracking-widest mt-1">Criador do Bueno Force</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            
+            <div class="mt-16 text-center" data-aos="zoom-in" data-aos-delay="400">
+                <button onclick="abrirPopup()" class="group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-brand-surface border border-brand-primary/30 hover:bg-brand-primary px-8 py-4 transition-all duration-300 hover:shadow-[0_0_30px_rgba(215,160,123,0.3)] hover:-translate-y-1"> 
+                    <span class="relative text-xs font-bold uppercase tracking-[0.2em] text-white group-hover:text-black transition-colors flex items-center gap-3"> 
+                        Quero Ter Esses Resultados <i class="fas fa-arrow-right"></i>
+                    </span> 
+                </button> 
+            </div>
+            
         </div>
     </section>
 
@@ -377,7 +454,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-12"> 
                 <div class="lg:col-span-4 space-y-4"> 
                     <a href="#" class="inline-block hover:opacity-80 transition-opacity duration-300 mb-4"> 
-                        <div class="text-2xl font-black italic tracking-widest text-white">Mentoria <span class="text-brand-primary">BLACK</span></div>
+                        <div class="text-2xl font-black tracking-widest text-white">Mentoria <span class="text-brand-primary">BLACK</span></div>
                     </a> 
                     <p class="text-brand-textMuted text-sm leading-relaxed max-w-sm"> 
                         Estruture seu negócio na saúde com posicionamento forte, equipe alinhada, processos eficientes e crescimento escalável com previsibilidade. 
@@ -386,25 +463,25 @@
                 <div class="lg:col-span-2 lg:col-start-7"> 
                     <h4 class="text-brand-textSecondary font-bold uppercase tracking-widest text-xs mb-6">Navegação</h4> 
                     <ul class="space-y-3 text-sm text-brand-textMuted"> 
-                        <li><a href="#metodo" class="hover:text-brand-primary transition-colors duration-200">A Mentoria</a></li> 
-                        <li><a href="#conteudo" class="hover:text-brand-primary transition-colors duration-200">Temas Abordados</a></li> 
-                        <li><a href="#mentores" class="hover:text-brand-primary transition-colors duration-200">Os Mentores</a></li> 
-                        <li><a href="#depoimentos" class="hover:text-brand-primary transition-colors duration-200">Depoimentos</a></li> 
+                        <li><a href="#metodo" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">A Mentoria</a></li> 
+                        <li><a href="#conteudo" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">Temas Abordados</a></li> 
+                        <li><a href="#mentores" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">Especialistas</a></li> 
+                        <li><a href="#depoimentos" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">Resultados</a></li> 
                     </ul> 
                 </div> 
                 <div class="lg:col-span-2"> 
                     <h4 class="text-brand-textSecondary font-bold uppercase tracking-widest text-xs mb-6">Legal</h4> 
                     <ul class="space-y-3 text-sm text-brand-textMuted"> 
-                        <li><a href="#" class="hover:text-brand-primary transition-colors duration-200">Termos de Uso</a></li> 
-                        <li><a href="#" class="hover:text-brand-primary transition-colors duration-200">Privacidade</a></li> 
-                        <li><a href="#" class="hover:text-brand-primary transition-colors duration-200">Aviso Legal</a></li> 
+                        <li><a href="#" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">Termos de Uso</a></li> 
+                        <li><a href="#" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">Política de Privacidade</a></li> 
+                        <li><a href="#" class="inline-flex hover:text-brand-primary hover:translate-x-1 transition-all duration-200">Aviso Legal</a></li> 
                     </ul> 
                 </div> 
                 <div class="lg:col-span-2"> 
                     <h4 class="text-brand-textSecondary font-bold uppercase tracking-widest text-xs mb-6">Suporte</h4> 
                     <ul class="space-y-3 text-sm text-brand-textMuted"> 
-                        <li><a href="#" class="hover:text-brand-success flex items-center gap-2 transition-colors"><i class="fab fa-whatsapp"></i> WhatsApp</a></li> 
-                        <li><a href="#" class="hover:text-white transition-colors">contato@mentoriablack.com</a></li> 
+                        <li><a href="#" class="hover:text-brand-success hover:translate-x-1 flex items-center gap-2 transition-all duration-200"><i class="fab fa-whatsapp"></i> WhatsApp Suporte</a></li> 
+                        <li><a href="#" class="inline-flex hover:text-white hover:translate-x-1 transition-all duration-200">contato@mentoriablack.com</a></li> 
                     </ul> 
                 </div> 
             </div> 
@@ -427,18 +504,18 @@
             
             <div class="text-center mb-8">
                 <div class="text-brand-primary text-[10px] font-black uppercase tracking-[0.2em] mb-2">Mentoria BLACK</div>
-                <h3 class="font-black text-2xl text-white uppercase tracking-tight mb-2">Aplicação</h3>
-                <p class="text-sm text-brand-textSecondary">Preencha os dados abaixo para darmos o próximo passo.</p>
+                <h3 class="font-black text-2xl text-white uppercase tracking-tight mb-2">Sua Inscrição</h3>
+                <p class="text-sm text-brand-textSecondary">Preencha os dados abaixo para avançarmos.</p>
             </div>
             
             <form id="form-mentoriablack" class="space-y-4 mt-6 popup-form">
                 <div>
                     <label for="lead-nome" class="block text-sm font-medium text-gray-300 mb-1">Nome</label>
-                    <input type="text" id="lead-nome" name="nome" required placeholder="Seu nome completo" class="w-full px-4 py-3 rounded-lg bg-brand-bg border border-white/10 text-white placeholder-gray-500 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition">
+                    <input type="text" id="lead-nome" name="nome" required placeholder="Seu nome completo" class="w-full px-4 py-3 rounded-lg bg-brand-bg border border-white/10 text-white placeholder-gray-500 hover:border-brand-primary/40 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition">
                 </div>
                 <div>
                     <label for="lead-email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                    <input type="email" id="lead-email" name="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-lg bg-brand-bg border border-white/10 text-white placeholder-gray-500 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition">
+                    <input type="email" id="lead-email" name="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-lg bg-brand-bg border border-white/10 text-white placeholder-gray-500 hover:border-brand-primary/40 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition">
                 </div>
                 <div>
                     <label for="lead-phone" class="block text-sm font-medium text-gray-300 mb-1">Telefone</label>
@@ -459,24 +536,6 @@
     <script>
         // Inicializa AOS
         AOS.init({ once: true, offset: 50, duration: 800 });
-
-        // Cursor Customizado
-        if (window.innerWidth >= 1024) {
-            const cursor = document.getElementById('cursor');
-            const cursorDot = document.getElementById('cursor-dot');
-            document.addEventListener('mousemove', (e) => {
-                cursorDot.style.left = e.clientX + 'px';
-                cursorDot.style.top = e.clientY + 'px';
-                setTimeout(() => {
-                    cursor.style.left = e.clientX + 'px';
-                    cursor.style.top = e.clientY + 'px';
-                }, 40);
-            });
-            document.querySelectorAll('a, button, input').forEach(el => {
-                el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-                el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-            });
-        }
 
         // Controle do Modal
         const popup = document.getElementById('popup-captura');
@@ -557,8 +616,8 @@
 
             const WEBHOOK_URL = 'https://hook.us1.make.com/bj1q14346ezeybpcqjb9ctea89aoatvn';
             
-            // INSIRA SUA URL DE REDIRECIONAMENTO AQUI EMBAIXO
-            const URL_DE_REDIRECIONAMENTO = 'URL_DE_REDIRECIONAMENTO_AQUI'; 
+            // URL de Redirecionamento Fallback (WhatsApp genérico caso não tenha sido especificado outro)
+            const BASE_REDIRECT_URL = 'https://wa.me/5541999999999?text=Gostaria%20de%20saber%20mais%20sobre%20a%20Mentoria%20BLACK'; 
 
             try {
                 await fetch(WEBHOOK_URL, {
@@ -576,8 +635,7 @@
                     ...utms
                 }).toString();
                 
-                // Realiza o redirecionamento
-                window.location.href = URL_DE_REDIRECIONAMENTO + (URL_DE_REDIRECIONAMENTO.includes('?') ? '&' : '?') + queryParams;
+                window.location.href = BASE_REDIRECT_URL + '&' + queryParams;
             }
         });
     </script>
