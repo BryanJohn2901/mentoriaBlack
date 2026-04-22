@@ -53,6 +53,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
         /* Glassmorphism base */
         .glass-strong {
             background: rgba(17, 17, 17, 0.85);
@@ -105,18 +110,22 @@
         </div> 
     </nav>
 
-    <header class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <header class="relative min-h-screen flex items-end lg:items-center pt-32 pb-12 lg:pb-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <picture class="absolute inset-0">
-                <source media="(min-width: 1024px)" srcset="assets/1920x1080.webp">
-                <img
-                    src="assets/1080x1920.webp"
-                    alt="Mentoria BLACK"
-                    class="w-full h-full object-cover"
-                    loading="eager"
-                    fetchpriority="high"
-                >
-            </picture>
+            <img
+                src="assets/Prancheta 2.webp"
+                alt="Mentoria BLACK"
+                class="absolute inset-0 w-full h-full object-cover object-top block lg:hidden"
+                loading="eager"
+                fetchpriority="high"
+            >
+            <img
+                src="assets/Prancheta 1.webp"
+                alt="Mentoria BLACK"
+                class="absolute inset-0 w-full h-full object-cover object-top lg:object-cover hidden lg:block"
+                loading="eager"
+                fetchpriority="high"
+            >
             <div class="absolute inset-0 bg-black/55"></div>
             <div class="absolute top-1/4 -right-32 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[150px] pointer-events-none"></div>
             <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-brand-bg to-transparent"></div>
@@ -257,7 +266,7 @@
                         <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
                         <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="André Albuquerque" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
+                            <img src="assets/andre.webp" alt="André Albuquerque" class="w-full h-full object-contain md:object-cover bg-black grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                             
                             <div class="absolute top-6 right-6 glass-strong px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 transform translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-xl">
@@ -288,7 +297,7 @@
                         <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
                         <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" alt="Rafael Tonietto" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
+                            <img src="assets/rafael (1).webp" alt="Rafael Tonietto" class="w-full h-full object-contain md:object-cover bg-black grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                             
                             <div class="absolute top-6 left-6 glass-strong px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 transform -translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-xl">
@@ -319,7 +328,7 @@
                         <div class="absolute -inset-4 bg-brand-primary/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
                         <div class="relative rounded-3xl overflow-hidden border border-white/10 aspect-square md:aspect-[4/5] shadow-2xl transition-all duration-500 group-hover:border-brand-primary/50 group-hover:shadow-[0_20px_50px_rgba(215,160,123,0.22)]">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" alt="Artur Monteiro" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
+                            <img src="assets/thiago.webp" alt="Artur Monteiro" class="w-full h-full object-contain md:object-cover bg-black grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" loading="lazy">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
                             
                             <div class="absolute top-6 right-6 glass-strong px-4 py-2 rounded-full border border-white/10 flex items-center gap-2 transform translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 z-20 shadow-xl">
